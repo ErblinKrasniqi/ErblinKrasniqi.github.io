@@ -1,0 +1,303 @@
+:root {
+  --green: #6ef3a4;
+  --black: #2d2e32;
+  --background: #25262a;
+  --poppins: Poppins;
+  --coding: M PLUS Code Latin;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--poppins);
+  background-color: var(--background);
+  color: white;
+}
+
+/*nav sectiion */
+nav {
+  display: flex;
+  background-color: var(--black);
+  color: white;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.name {
+  font-size: 0.7rem;
+  margin-left: 0;
+}
+
+.categorys {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categorys h3 {
+  font-family: var(--coding);
+  font-weight: 400;
+  word-spacing: 4px;
+  margin: 0px 6px;
+}
+
+.socials,
+.socials div {
+  display: flex;
+  display: none;
+}
+.email {
+}
+
+.email svg {
+  width: 20px;
+  background-color: var(--black);
+  padding: 0.1mm;
+  border-radius: 20%;
+}
+
+/*Tablet media */
+
+@media (min-width: 800px) {
+  nav {
+    padding: 3%;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .categorys {
+    font-size: 1rem;
+  }
+
+  .categorys h3 {
+    margin-right: 30px;
+  }
+}
+/*Tablet media  end*/
+
+/*Loptop media */
+
+@media (min-width: 1800px) {
+  nav {
+    padding: 8mm;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .categorys {
+    font-size: 1.3rem;
+  }
+  .categorys h3 {
+    margin-right: 20mm;
+  }
+
+  .email svg {
+    height: auto;
+    width: 12mm;
+  }
+}
+
+/*Loptop media end*/
+
+/*nav section end */
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 60mm 1fr;
+  margin-bottom: 53px;
+}
+.text-up h3 {
+  background-color: var(--green);
+  color: black;
+  font-weight: 300;
+  width: 50%;
+  margin: 6mm auto;
+  padding: 2mm;
+}
+
+.info h1 {
+  margin: 4mm 0;
+}
+
+/*Tablet media */
+@media (min-width: 800px) {
+  .text-up h3 {
+    width: 30%;
+  }
+  .text-up p {
+    max-width: 200mm;
+    margin: 0 auto;
+  }
+}
+
+/*Tablet media end*/
+
+/*Loptop meida */
+@media (min-width: 1500px) {
+  .main {
+    display: block;
+    text-align: left;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .text-up h3 {
+    font-size: 6mm;
+    width: 40%;
+    text-align: center;
+    margin-left: 40mm;
+  }
+  .text-up h1 {
+    max-width: 60%;
+    margin-left: 40mm;
+    letter-spacing: 5px;
+    font-size: 11mm;
+  }
+  .text-up p {
+    max-width: 300mm;
+    margin-left: 40mm;
+    font-size: 5.5mm;
+  }
+}
+
+/*Loptop media end*/
+
+/*Numrat years of experience*/
+
+.number {
+  display: flex;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.child h1 {
+  font-size: 14mm;
+  margin-right: 11px;
+}
+
+.child h3 {
+  text-align: left;
+  width: 50%;
+}
+
+.profile {
+  grid-row-start: 1;
+}
+
+.profile img {
+  width: 70%;
+  max-width: 70mm;
+}
+/*Loptop media */
+
+@media (min-width: 1500px) {
+  .number div:nth-child(1) {
+    margin-left: 30mm;
+  }
+
+  .child {
+    margin: 0;
+    justify-content: left;
+  }
+
+  .child h1 {
+    font-size: 20mm;
+  }
+  .profile {
+    grid-column-start: 2;
+  }
+
+  .profile {
+    margin: 0 auto;
+    margin-left: 20%;
+  }
+
+  .profile img {
+    max-width: 230mm;
+  }
+}
+
+/*Loptop media end*/
+
+/*cards section*/
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: var(--black);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 160mm;
+  margin: 0 auto;
+}
+
+.card h1 {
+  color: var(--green);
+  font-weight: 300;
+}
+
+.bottom-info {
+  text-align: center;
+  font-family: var(--coding);
+  max-width: 200mm;
+  margin: 0 auto;
+}
+
+@media (min-width: 1500px) {
+  .under {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    max-width: 300mm;
+    width: 80%;
+    padding: 8mm;
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .bottom-info {
+    text-align: left;
+  }
+
+  .bottom-info h1,
+  .bottom-info p {
+    font-size: 1.5rem;
+    max-width: 100%;
+    width: 1000mm;
+    margin: 0;
+  }
+  .bottom-info h1 {
+    font-size: 13mm;
+    margin-bottom: 20px;
+  }
+}
