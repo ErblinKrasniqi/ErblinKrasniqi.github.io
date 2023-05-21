@@ -8,13 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400;500&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js" defer></script>
+
+<link rel="stylesheet" href="./style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
-        <h3 class="name">Erblin Kransiqi</h3>
+        <h3 id="name" class="name">Erblin Krasniqi</h3>
         <div class="categorys">
-            <h3> < Home ></Home></h3>
+            <h3><a  id="test" href="#"> < Home ></Home></a></h3>
             <h3>Projects</h3>
             <h3>Contacts</h3>
         </div>
@@ -45,8 +50,7 @@
 
                 <h3>Full stack developer</h3>
                 <h1>Some of my skills and qualities</h1>
-                <p>I am a highly motivated and versatile individual with experience in web
-                    development, design, video editing, social media management, and Facebook advertising. </p>
+                <p id="paragraph"> </p>
             </div>
 
                 <div class="number">
@@ -60,9 +64,9 @@
                     </div>
                 </div>
         </div>
-        <div class="profile">
+        <div id="container" class="profile">
                  
-                <img src="erblin4.png" alt="">
+                <img id="image" src="erblin4.png" alt="">
           
         </div>
     </div>
@@ -88,5 +92,7 @@
                I am currently finishing my Bachelor's degree and looking to leverage my skills in a professional setting.</p>
         </div>
     </div>
+
+
   </body>
 </html>

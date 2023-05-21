@@ -6,6 +6,7 @@
   --coding: M PLUS Code Latin;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,11 @@ body {
   font-family: var(--poppins);
   background-color: var(--background);
   color: white;
+}
+
+a {
+  color: red;
+  text-decoration: none; /* no underline */
 }
 
 /*nav sectiion */
@@ -42,13 +48,19 @@ nav {
   font-weight: 400;
   word-spacing: 4px;
   margin: 0px 6px;
+  position: relative;
 }
+
+
 
 .socials,
 .socials div {
   display: flex;
   display: none;
 }
+
+
+
 .email {
 }
 
@@ -80,15 +92,15 @@ nav {
 
 /*Loptop media */
 
-@media (min-width: 1800px) {
+@media (min-width: 1500px) {
   nav {
-    padding: 8mm;
+    padding: 7mm;
   }
   .name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .categorys {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .categorys h3 {
     margin-right: 20mm;
@@ -98,6 +110,16 @@ nav {
     height: auto;
     width: 12mm;
   }
+
+  .socials,
+  .socials div {
+    display: flex;
+    
+  }
+
+
+
+
 }
 
 /*Loptop media end*/
